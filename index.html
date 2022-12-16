@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Brandeis Dog Registration</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Brandeis Dog Registration</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Brandeis_University_seal.svg/1200px-Brandeis_University_seal.svg.png" alt="Brandeis University Seal">
+    <p id="description">Complete the form below to have your dog considered to be an on campus presence.</p>
+    <hr>
+    <form id="survey-form">
+      <label id="name-label" for="name"> Dog Name: <input id="name" type="text" placeholder="Oakley Lacy" required></label>
+      <label id="email-label" for="email"> Student Email: <input id="email" type="email" placeholder="oak.lacy@gmail.com" required></label>
+      <label id="number-label" for="number">Dog Age: <input id="number" type="number" min=0 max=100 placeholder="0"></label>
+      <hr>
+      <label id="dropdown-label" for="dropdown">
+        <select id="dropdown">
+          <option>Select Frequency</option>
+          <option>Daily</option>
+          <option>Weekdays</option>
+          <option>Weekends</option>
+        </select>
+      </label>
+      <hr>
+      <label id="radio-one-label" for="radio-one"><input id="radio-one" name="radio" class="inline" type="radio" value=1>Allergenic</label>
+      <label id="radio-two-label" for="radio-two"><input id="radio-two" name="radio" class="inline" type="radio" value=2>Hypoallergenic</label>
+      <hr>
+      I'd like to take him/her to the...
+      <label for="checkbox-one"><input id="checkbox-one" class="inline" type="checkbox" value=1>Cafeteria</input></label>
+      <label for="checkbox-two"><input id="checkbox-two" class="inline" type="checkbox" value=2>Lecture Hall</label>
+      <label for="checkbox-three"><input id="checkbox-three" class="inline" type="checkbox" value=3>Library</label>
+      <hr>
+      <label for="textarea"><textarea id="textarea" placeholder="Additional Comments"></textarea></label>
+      <hr>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
